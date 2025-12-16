@@ -5,10 +5,14 @@ import { RouterLink } from 'vue-router'
 
 <template>
   <header>
-    <nav>
-      <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/about">About</RouterLink>
-    </nav>
+    <div class="innerWrapper">
+      <div class="navWrapper">
+        <nav>
+          <RouterLink to="/">Home</RouterLink>
+          <RouterLink to="/about">About</RouterLink>
+        </nav>
+      </div>
+    </div>
   </header>
 </template>
 
@@ -18,32 +22,44 @@ header {
   width: 100%;
   height: 4.5rem;
   background-color: red;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(6px);
+  display: flex;
 }
 
-/* .logo {
-  display: block;
-  margin: 0 auto 2rem;
-} */
+.innerWrapper {
+  width: 100%;
+  padding: 0 1.25rem;
+}
+
+.navWrapper {
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  margin-right: 5rem;
+}
 
 nav {
-  width: 100%;
+  display: flex;
+  height: 100%;
   font-size: 12px;
   text-align: center;
-  /* margin-top: 2rem; */
+  align-items: center;
 }
 
 nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
+  color: green;
 }
 
 nav a {
   display: inline-block;
   padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+nav a:not(.router-link-exact-active):hover {
+  color: red;
 }
 
 nav a:first-of-type {
