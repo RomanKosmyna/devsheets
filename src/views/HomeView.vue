@@ -1,22 +1,28 @@
 <script setup lang="ts">
 import MainHeader from '@/components/MainHeader.vue';
-import TheWelcome from '../components/TheWelcome.vue'
 import BackgroundWrapper from '@/components/BackgroundWrapper.vue';
 import MainWrapper from '@/components/MainWrapper.vue';
 </script>
 
 <template>
   <BackgroundWrapper>
+    <MainHeader />
     <MainWrapper>
-      <MainHeader />
-      <TheWelcome />
+      <div class="home">
+        <p>Home Page</p>
+      </div>
     </MainWrapper>
   </BackgroundWrapper>
 </template>
 
 <style>
-main {
-  width: 100%;
-  padding: 0 1.25rem;
+@media (min-width: 1024px) {
+  .home {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+  }
 }
 </style>
