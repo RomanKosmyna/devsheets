@@ -3,10 +3,12 @@ import MainHeader from '@/components/MainHeader.vue';
 import TheWelcome from '../components/TheWelcome.vue'
 import BackgroundWrapper from '@/components/BackgroundWrapper.vue';
 import MainWrapper from '@/components/MainWrapper.vue';
+import bg from "../assets/home-bg.png";
 </script>
 
 <template>
-  <BackgroundWrapper>
+  <BackgroundWrapper :bg="bg">
+    <MainHeader />
     <MainWrapper>
       <MainHeader />
       <TheWelcome />

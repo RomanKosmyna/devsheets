@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import bg from "../assets/bg.jpg";
+defineProps<{ bg: string }>();
 </script>
 
 <template>

@@ -5,10 +5,15 @@ import { RouterLink } from 'vue-router'
 
 <template>
   <header>
-    <nav>
-      <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/about">About</RouterLink>
-    </nav>
+    <div class="innerWrapper">
+      <div class="navWrapper">
+        <nav>
+          <RouterLink to="/">Home</RouterLink>
+          <RouterLink to="/sheets">Sheets</RouterLink>
+          <RouterLink to="/about">About</RouterLink>
+        </nav>
+      </div>
+    </div>
   </header>
 </template>
 
@@ -33,17 +38,19 @@ nav {
 }
 
 nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
+  color: #FFEABF;
 }
 
 nav a {
   display: inline-block;
   padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #BFAF8F;
+}
+
+nav a:not(.router-link-exact-active):hover {
+  color: #FFEABF;
 }
 
 nav a:first-of-type {
