@@ -9,6 +9,7 @@ import { RouterLink } from 'vue-router'
       <div class="navWrapper">
         <nav>
           <RouterLink to="/">Home</RouterLink>
+          <RouterLink to="/sheets">Sheets</RouterLink>
           <RouterLink to="/about">About</RouterLink>
         </nav>
       </div>
@@ -48,7 +49,7 @@ nav {
 }
 
 nav a.router-link-exact-active {
-  color: green;
+  color: #FFEABF;
 }
 
 nav a {
@@ -56,10 +57,11 @@ nav a {
   padding: 0 1rem;
   font-size: 1.3rem;
   font-weight: 500;
+  color: #BFAF8F;
 }
 
 nav a:not(.router-link-exact-active):hover {
-  color: red;
+  color: #FFEABF;
 }
 
 nav a:first-of-type {

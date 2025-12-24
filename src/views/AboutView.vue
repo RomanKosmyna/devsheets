@@ -2,10 +2,11 @@
 import MainHeader from '@/components/MainHeader.vue';
 import BackgroundWrapper from '@/components/BackgroundWrapper.vue';
 import MainWrapper from '@/components/MainWrapper.vue';
+import bg from "../assets/about-bg.jpg";
 </script>
 
 <template>
-  <BackgroundWrapper>
+  <BackgroundWrapper :bg="bg">
     <MainHeader />
     <MainWrapper>
       <div class="about">
