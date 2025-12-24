@@ -1,9 +1,3 @@
-<<<<<<< Updated upstream
-<template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
-=======
 <script setup lang="ts">
 import MainHeader from '@/components/MainHeader.vue';
 import BackgroundWrapper from '@/components/BackgroundWrapper.vue';
@@ -20,15 +14,16 @@ import bg from "../assets/about-bg.jpg";
       </div>
     </MainWrapper>
   </BackgroundWrapper>
->>>>>>> Stashed changes
 </template>
 
 <style>
 @media (min-width: 1024px) {
   .about {
-    min-height: 100vh;
+    min-height: calc(100vh - 80px);
     display: flex;
+    justify-content: center;
     align-items: center;
+    font-size: 30px;
   }
 }
 </style>
