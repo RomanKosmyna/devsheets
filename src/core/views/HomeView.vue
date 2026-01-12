@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import MainHeader from '@/components/MainHeader.vue';
-import BackgroundWrapper from '@/components/BackgroundWrapper.vue';
-import MainWrapper from '@/components/MainWrapper.vue';
-import bg from "../assets/home-bg.png";
+import MainHeader from '../components/MainHeader.vue';
+import BackgroundWrapper from '../components/BackgroundWrapper.vue';
+import MainWrapper from '@/core/components/MainWrapper.vue';
+import bg from "../../assets/home-bg.png";
 </script>
 
 <template>
