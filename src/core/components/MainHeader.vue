@@ -1,17 +1,19 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
-
+import MainLogo from './MainLogo.vue';
 </script>
 
 <template>
   <header>
-    <div class="innerWrapper">
-      <div class="navWrapper">
-        <nav>
-          <RouterLink to="/">Home</RouterLink>
-          <RouterLink to="/sheets">Sheets</RouterLink>
-          <RouterLink to="/about">About</RouterLink>
-        </nav>
+    <div class="pWrapper">
+      <div class="innerWrapper">
+        <MainLogo />
+        <div class="navWrapper">
+          <nav>
+            <RouterLink to="/">Home</RouterLink>
+            <RouterLink to="/sheets">Sheets</RouterLink>
+          </nav>
+        </div>
       </div>
     </div>
   </header>
@@ -25,19 +27,27 @@ header {
   background-color: red;
   background: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(6px);
-  display: flex;
+}
+
+.pWrapper {
+  width: 100%;
+  height: 100%;
+  padding: 0 1.25rem;
 }
 
 .innerWrapper {
   width: 100%;
-  padding: 0 1.25rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5rem;
 }
 
 .navWrapper {
   height: 100%;
   display: flex;
   justify-content: end;
-  margin-right: 5rem;
 }
 
 nav {

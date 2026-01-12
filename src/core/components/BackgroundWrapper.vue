@@ -3,7 +3,7 @@ defineProps<{ bg: string }>();
 </script>
 
 <template>
-    <div class="wrapper" :style="{ backgroundImage: `url(${bg})` }">
+    <div class="wrapper">
         <slot />
     </div>
 </template>
@@ -23,7 +23,7 @@ defineProps<{ bg: string }>();
     position: absolute;
     inset: 0;
     z-index: -1;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 16, 17);
     backdrop-filter: blur(6px);
 }
 </style>
